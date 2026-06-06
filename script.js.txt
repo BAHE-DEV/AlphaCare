@@ -1,0 +1,19 @@
+javascript
+document.getElementById('rideForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop standard page reload
+
+    // Extracting user inputs for future API handling (e.g., EmailJS or Formspree)
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const date = document.getElementById('date').value;
+    const type = document.getElementById('type').value;
+    const pickup = document.getElementById('pickup').value;
+    const dropoff = document.getElementById('dropoff').value;
+
+    // Simple confirmation output verification
+    console.log("Alpha Care Ride Requested:", { name, phone, date, type, pickup, dropoff });
+
+    // UI Updates
+    document.getElementById('rideForm').classList.add('hidden');
+    document.getElementById('formSuccess').classList.remove('hidden');
+});

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Care Transportation LLC | Reliable NEMT Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="brand-alpha">Alpha</span>Care <span class="brand-sub">Transportation</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#book">Book a Ride</a></li>
+                </ul>
+            </nav>
+            <a href="tel:18005550199" class="cta-phone">📞 (800) 555-0199</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2>Safe, Reliable & Compassionate Medical Transportation</h2>
+            <p>Specialized ambulatory, wheelchair, and stretcher transit services prioritizing your comfort and safety.</p>
+            <div class="hero-buttons">
+                <a href="#book" class="btn btn-primary">Schedule a Ride</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h3>About Alpha Care Transportation LLC</h3>
+            <hr class="accent-line">
+            <p class="section-lead">We bridge the gap between medical care and mobility. Our dedicated team ensures every passenger arrives at their destination safely, comfortably, and on time.</p>
+            <div class="about-features">
+                <div class="feature">
+                    <h3>Certified Drivers</h3>
+                    <p>All drivers are CPR-certified, background-checked, and extensively trained in defensive driving and defensive sensitivity training.</p>
+                </div>
+                <div class="feature">
+                    <h3>Equipped Fleet</h3>
+                    <p>Our modern vehicles are fully ADA-compliant, fitted with state-of-the-art hydraulic lifts and secure tie-down systems.</p>
+                </div>
+                <div class="feature">
+                    <h3>Flexible Scheduling</h3>
+                    <p>Offering one-way, round-trip, and recurring medical transport options customized to your specific medical schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Core Services</h2>
+            <hr class="accent-line">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚶‍♂️</div>
+                    <h3>Ambulatory Transit</h3>
+                    <p>For passengers who can walk independently but require basic assistance or a reliable ride to appointments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">♿</div>
+                    <h3>Wheelchair Transport</h3>
+                    <p>Custom hydraulic ramps and non-slip surfaces ensuring safe, effortless boarding for wheelchair-bound clients.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Medical Appointments</h3>
+                    <p>Timely transit to dialysis, chemotherapy, physical therapy, and routine checkups with guaranteed return pick-up.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3>Airport & Social Events</h3>
+                    <p>Assistance beyond medical needs—get to family gatherings, local events, or airport terminals smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="book" class="booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2>Request a Ride</h2>
+                    <p>Fill out our quick inquiry form, and a scheduling coordinator will reach out within 2 hours to confirm your details and provide a rate quote.</p>
+                    <div class="contact-details">
+                        <p><strong>Office Hours:</strong> Mon - Sat: 6:00 AM - 7:00 PM</p>
+                        <p><strong>Email:</strong> dispatch@alphacaretransport.com</p>
+                        <p><strong>Emergency/After Hours:</strong> Contact dispatch directly via our phone line.</p>
+                    </div>
+                </div>
+                <div class="booking-form-container">
+                    <form id="rideForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required placeholder="(555) 555-5555">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Appointment Date</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="type">Service Needed</label>
+                                <select id="type" required>
+                                    <option value="">Select Option</option>
+                                    <option value="Ambulatory">Ambulatory (Walking)</option>
+                                    <option value="Wheelchair">Wheelchair Transport</option>
+                                    <option value="Stretcher">Stretcher Assistance</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup">Pick-up Address</label>
+                            <input type="text" id="pickup" required placeholder="123 Home St, City">
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoff">Drop-off Destination</label>
+                            <input type="text" id="dropoff" required placeholder="Medical Center Name / Address">
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit Booking Request</button>
+                    </form>
+                    <div id="formSuccess" class="success-message hidden">
+                        <h3>🎉 Request Submitted!</h3>
+                        <p>Thank you for choosing Alpha Care. A team member will call you shortly to finalize details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Alpha Care Transportation LLC. All Rights Reserved.</p>
+            <p>Providing compliant, fully insured Non-Emergency Medical Transportation.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
